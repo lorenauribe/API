@@ -105,6 +105,8 @@
   
 -   <xref:System.Collections.Generic.Stack%601.Peek%2A> returns an element that is at the top of the <xref:System.Collections.Generic.Stack%601> but does not remove it from the <xref:System.Collections.Generic.Stack%601>.  
   
+ The order of enumeration of items proceeds from top to bottom (newest pushed to oldest pushed).  
+  
  The capacity of a <xref:System.Collections.Generic.Stack%601> is the number of elements the <xref:System.Collections.Generic.Stack%601> can hold. As elements are added to a <xref:System.Collections.Generic.Stack%601>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.Stack%601.TrimExcess%2A>.  
   
  If <xref:System.Collections.Generic.Stack%601.Count%2A> is less than the capacity of the stack, <xref:System.Collections.Generic.Stack%601.Push%2A> is an O(1) operation. If the capacity needs to be increased to accommodate the new element, <xref:System.Collections.Generic.Stack%601.Push%2A> becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Stack%601.Count%2A>. <xref:System.Collections.Generic.Stack%601.Pop%2A> is an O(1) operation.  
@@ -720,6 +722,8 @@
  Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A>.  
   
  <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the next element.  
+  
+ The order of enumeration of items proceeds from top to bottom (newest pushed to oldest pushed).  
   
  If <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Stack%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.Stack%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
   
