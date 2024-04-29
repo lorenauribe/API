@@ -523,11 +523,11 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>System.Private.ServiceModel</AssemblyName>
         <AssemblyVersion>4.10.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.ISerializationSurrogateProvider</ReturnType>
